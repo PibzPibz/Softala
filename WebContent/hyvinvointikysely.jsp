@@ -11,7 +11,7 @@
 </head>
 <body>
 	
-	<form class="well" method="post">
+	<form class="well" action="email" method="post">
 		<div class="container">
 			<h3>Hyvinvointikysely</h3>
 			<p></p>      
@@ -20,11 +20,11 @@
 			<div class="form-group">
 				<div class="input-group">
 					<label for="InputMessage">Ole hyvä ja kerro, miltä sinusta nyt tuntuu:</label>
-					<textarea name="InputMessage" id="InputMessage" class="form-control"  rows="5" required></textarea>
+					<textarea name="InputMessage" id="InputMessage" class="form-control"  rows="5" required="true"></textarea>
 				</div>
 			</div>
 			<div>
-				<a href="mailto:mikko.paussu@gmail.com" subject="The%20subject%20of%20the%20mail"><button class="btn btn-primary"  type="submit" value="Send">Submit</button></a>
+				<button class="btn btn-primary"  type="submit" value="Send">Submit</button>
 				<button class="btn">Clear</button>
 			</div>
 		</div>
