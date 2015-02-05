@@ -42,7 +42,7 @@ public class EmailServlet extends HttpServlet {
 		//Haetaan käyttäjän syöttämä tieto
 		String vastaus=request.getParameter("InputMessage");
 		
-		//Luodaan EmailTools-olio, joka lähettää sähköpostin haluttuun osoitteeseen
+		//Luodaan EmailTools-olio, joka lähettää sähköpostin haluttuun emailosoitteeseen
 		EmailTools email = new EmailTools();
 		email.lahetaSahkoposti("softalamail@gmail.com", "softala1", "softala2015@gmail.com",  "Palaute", vastaus);
 		
